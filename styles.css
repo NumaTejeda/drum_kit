@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1em;
+  margin: 200px auto;
+  border: 1px solid red;
+  width: fit-content;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  background-color: cadetblue;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.key:hover {
+  background-color: chartreuse;
+  color: chocolate;
+}
