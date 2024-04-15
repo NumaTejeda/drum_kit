@@ -10,3 +10,15 @@ document.addEventListener('keydown', e => {
     }, 400);
     audio.play();
 })
+
+function playAudio(div) {
+    const data = div.getAttribute('data-key');
+    const audio = document.querySelector(`audio[data-key="${data}"]`)
+    audio.play()
+    div.classList.add('tocando')
+    audio.currentTime = 0; // vuelve al incio 
+    setTimeout(() => {
+        div.classList.remove('tocando')
+    }, 400);
+
+}
