@@ -12,7 +12,6 @@ document.addEventListener('keydown', e => {
         key.classList.remove('tocando')
     }, 400);
     audio.play();
-    console.log(audio)
 })
 
 // Para movil
